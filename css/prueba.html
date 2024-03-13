@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+        #miDiv {
+            width: 100%;
+            height: 0%;
+            background-color: #ccc;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            top: 100px;
+            transform: scaley(-1);
+        }
+        
+
+        /* #miDiv::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #00f;
+            transition: top 1s ease-in-out;
+        }
+
+        #miDiv.cambiado::after {
+            top: 0;
+            transition: top 5s ease-in-out;
+        } */
+        
+    </style>
+</head>
+<body>
+
+    <!-- <div id="miDiv" onclick="animacion()">Haz clic aquí</div> -->
+    
+    <div class="caja" onclick="animacion()"><div id="miDiv"></div></div>
+    
+
+
+    <script src="prueba.js"></script>
+</body>
+</html>
